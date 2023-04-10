@@ -1,23 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Testing - Add LocalStorage
+    <ion-title  >
+      Testing - Add LocalStorage Faican Julianna
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="medium" class="ion-padding">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">
-        Testing - Add LocalStorage
+      <ion-title size="large" color="#94ABE2">
+        Add LocalStorage Working
       </ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
+    <ion-title color="dark">Inserte Texto</ion-title>
+    <ion-icon name="chevron-down-outline"></ion-icon>
+    <br>
     <ion-label>{{recovertext}}</ion-label>
+
     <input type="text" [(ngModel)]="receivetext">
-    <button (click)="print()">Send</button>
+
+    <ion-button (click)="print()" shape="round" fill="outline" color="dark"> 
+      Guardar 
+      <ion-icon name="add-circle-outline" slot="end"></ion-icon>
+    </ion-button>
   </div>
 </ion-content>
